@@ -1,0 +1,56 @@
+package k20230414;
+
+import java.util.Scanner;
+
+public class CalendarTest2
+{
+	public static void main(String[] args)
+	{
+		MyCalendar calendar = new MyCalendar(); // static으로 만들지 않은 경우(9~10) 객체를 만들어서
+		System.out.println(calendar.isLeapYear(2023));
+		System.out.println(MyCalendar.isLeapYear(2023));//static인 경우
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("달력을 출력할 년, 월을 입력하세요: ");
+		int year = scanner.nextInt();
+		int month = scanner.nextInt();
+		
+		System.out.println("===========================");
+		System.out.printf("         %4d년%2d월%n",year,month);
+		System.out.println("===========================");
+		System.out.println(" 일  월  화  수  목  금  토");
+		System.out.println("===========================");
+	
+		for(int i=1; i<=MyCalendar.weekDay(year, month, 1); i++)
+		{
+			System.out.print("    ");
+		}
+		
+		for(int i=1;i<=MyCalendar.lastDay(year, month);i++)
+		{
+			System.out.printf(" %2d ", i);
+			if(MyCalendar.weekDay(year, month, i)==6 && i!=MyCalendar.lastDay(year,month)) {System.out.println();}
+		}
+		System.out.println("\n===========================");
+		
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

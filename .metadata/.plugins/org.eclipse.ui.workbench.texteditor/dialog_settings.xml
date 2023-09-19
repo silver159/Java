@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<item key="selection" value="tset"/>
+		<list key="findhistory">
+			<item value="hset"/>
+			<item value="HashSet"/>
+			<item value="hSet"/>
+			<item value="dbTyep"/>
+			<item value="&#x09;&#x09;// TODO Auto-generated constructor stub"/>
+			<item value="package k20230412;"/>
+			<item value="hex"/>
+			<item value="oct"/>
+			<item value="bin"/>
+			<item value="40"/>
+			<item value="small"/>
+			<item value="big"/>
+			<item value="bublleSortAsc"/>
+			<item value="card"/>
+			<item value="data"/>
+		</list>
+		<list key="replacehistory">
+			<item value="tset"/>
+			<item value="TreeSet"/>
+			<item value="tSet"/>
+			<item value="dbType"/>
+			<item value="bin"/>
+			<item value="hex"/>
+			<item value="oct"/>
+			<item value="low"/>
+			<item value="high"/>
+			<item value="bubbleSortAsc"/>
+			<item value="cards"/>
+			<item value="lotto"/>
+			<item value="powerball"/>
+			<item value="getLotto"/>
+			<item value="bonus"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="646"/>
+		<item key="DIALOG_Y_ORIGIN" value="268"/>
+		<item key="DIALOG_WIDTH" value="322"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+</section>

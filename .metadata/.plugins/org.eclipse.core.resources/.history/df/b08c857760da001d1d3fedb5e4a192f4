@@ -1,0 +1,79 @@
+package k20230414;
+
+import java.util.Calendar;
+import java.util.Scanner;
+
+public class CalendarTest2
+{
+	public static void main(String[] args)
+	{
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("현재 달력은 1번 나머지는 2번을 입력하세요: ");
+		int y = scanner.nextInt();
+		if (y ==1)
+		{
+			Calendar calendar = Calendar.getInstance();
+			System.out.println("===========================");
+			System.out.printf("         %4d년%2d월%n",calendar.get(calendar.YEAR),(calendar.get(calendar.MONTH)+1));
+			System.out.println("===========================");
+			System.out.println(" 일  월  화  수  목  금  토");
+			System.out.println("===========================");
+		
+			for(int i=1; i<=MyCalendar.weekDay(calendar.get(calendar.YEAR), (calendar.get(calendar.MONTH)+1), 1); i++)
+			{
+				System.out.print("    ");
+			}
+			
+			for(int i=1;i<=MyCalendar.lastDay(calendar.get(calendar.YEAR), (calendar.get(calendar.MONTH)+1));i++)
+			{
+				System.out.printf(" %2d ", i);
+				if(MyCalendar.weekDay(calendar.get(calendar.YEAR), (calendar.get(calendar.MONTH)+1), i)==6 && i!=MyCalendar.lastDay(calendar.get(calendar.YEAR),(calendar.get(calendar.MONTH)+1))) {System.out.println();}
+			}
+			System.out.println("\n===========================");
+		}
+		else
+		{
+		System.out.print("달력을 출력할 년, 월을 입력하세요: ");
+		int year = scanner.nextInt();
+		int month = scanner.nextInt();
+		
+		System.out.println("===========================");
+		System.out.printf("         %4d년%2d월%n",year,month);
+		System.out.println("===========================");
+		System.out.println(" 일  월  화  수  목  금  토");
+		System.out.println("===========================");
+	
+		for(int i=1; i<=MyCalendar.weekDay(year, month, 1); i++)
+		{
+			System.out.print("    ");
+		}
+		
+		for(int i=1;i<=MyCalendar.lastDay(year, month);i++)
+		{
+			System.out.printf(" %2d ", i);
+			if(MyCalendar.weekDay(year, month, i)==6 && i!=MyCalendar.lastDay(year,month)) {System.out.println();}
+		}
+		System.out.println("\n===========================");
+		
+		}
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

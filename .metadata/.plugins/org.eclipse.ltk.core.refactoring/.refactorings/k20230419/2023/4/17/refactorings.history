@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.tjoeun.textFileIO&apos; to &apos;k20230424/src&apos;&#x0D;&#x0A;- Original project: &apos;k20230419&apos;&#x0D;&#x0A;- Destination element: &apos;k20230424/src&apos;&#x0D;&#x0A;- Original element: &apos;k20230419/src/com.tjoeun.textFileIO&apos;" description="Copy package" destination="=k20230424/src" element1="/src&lt;com.tjoeun.textFileIO" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1682322686730" version="1.0"/>
+</session>
